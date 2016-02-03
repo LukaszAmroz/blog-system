@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Blog</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link rel="stylesheet" href="styles/style.css">
+	<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
+<body>
+	
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8 col-md-offset-2">
+				<h3>Mini System Blogowy</h3>
+				
+				<div id="new-header" data-status="show">
+					<p>Dodaj nową wiadomość <span class="fa fa-chevron-down"></span></p>	
+				</div>	
+
+				<div id="new-post">
+					<form id="main-form">
+						<div class="form-group">
+							<label for="subject">Temat wiadomości:</label>
+							<input type="text" id="subject" class="form-control">	
+						</div>
+
+						<div class="form-group">
+							<label for="text">Treść wiadomości:</label>
+							<p id="count">Pozostała liczba znaków <span id="counter">500</span></p>
+							<textarea name="text" id="text" class="form-control" maxlength="500"></textarea>
+						</div>
+					</form>
+					
+					<div class="buttons">
+						<button class="btn btn-success" id="add">Dodaj</button>
+						<button class="btn btn-danger" id="clear">Czyść</button>
+					</div>					
+				</div>
+
+					<hr>
+
+				<div id="posts">
+					<h4>Temat</h4>
+					<p class="data">26.01.2016</p>
+					<p class="paragraf">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis consequatur at molestiae, eius deserunt, porro pariatur aliquid accusamus, voluptatem adipisci quae molestias debitis sit dolorem excepturi, reiciendis laborum maiores. Eos! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium omnis quaerat odit aliquid, aperiam molestiae, quo maiores minima quisquam eos voluptas incidunt, accusantium quia, dolorem! Enim vero dicta reiciendis nam.</p>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	
+	<script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+	<script type="text/javascript" src="scripts/main.js"></script>
+</body>
+</html>
